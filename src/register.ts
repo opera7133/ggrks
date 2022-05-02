@@ -7,17 +7,17 @@ dotenv.config()
 
 const commands = [
     new SlashCommandBuilder().setName('ggrks').setDescription('Search with Google').setDescriptionLocalization("ja", "Googleで検索")
-        .addStringOption(option => option.setName('input').setDescription('Search words')),
+        .addStringOption(option => option.setName('words').setDescription('Search words')),
     new SlashCommandBuilder().setName('ddrks').setDescription('Search with DuckDuckGo').setDescriptionLocalization("ja", "DuckDuckGoで検索")
-        .addStringOption(option => option.setName('input').setDescription('Search words')),
+        .addStringOption(option => option.setName('words').setDescription('Search words')),
     new SlashCommandBuilder().setName('yfrks').setDescription('Search with Yahoo').setDescriptionLocalization("ja", "Yahooで検索")
-        .addStringOption(option => option.setName('input').setDescription('Search words')),
+        .addStringOption(option => option.setName('words').setDescription('Search words')),
     new SlashCommandBuilder().setName('bgrks').setDescription('Search with Bing').setDescriptionLocalization("ja", "Bingで検索")
-        .addStringOption(option => option.setName('input').setDescription('Search words')),
+        .addStringOption(option => option.setName('words').setDescription('Search words')),
     new SlashCommandBuilder().setName('bdrks').setDescription('Search with Baidu').setDescriptionLocalization("ja", "Baiduで検索")
-        .addStringOption(option => option.setName('input').setDescription('Search words')),
+        .addStringOption(option => option.setName('words').setDescription('Search words')),
     new SlashCommandBuilder().setName('ydrks').setDescription('Search with Yandex').setDescriptionLocalization("ja", "Yandexで検索")
-        .addStringOption(option => option.setName('input').setDescription('Search words')),
+        .addStringOption(option => option.setName('words').setDescription('Search words')),
 ].map(command => command.toJSON());;
 
 const token: string = process.env.TOKEN ?? 'a'
