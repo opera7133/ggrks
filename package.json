@@ -9,8 +9,11 @@
     "start": "node build/main.js",
     "compile": "tsc -p ."
   },
-  "keywords": [],
-  "author": "",
+  "author": "wamo <ainznino@pm.me>",
+  "repository": {
+     "type": "git",
+     "url": "https://github.com/opera7133/ggrks.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^17.0.31",
